@@ -1,0 +1,235 @@
+body {
+  background-color: rgba(33, 37, 41 /1);
+  footer a {
+    font-size: 1rem;
+
+    @media (max-width: 1200px) {
+      font-size: 0.95rem;
+    }
+    @media (max-width: 992px) {
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 0.85rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+main.container-fluid {
+  margin: 2rem;
+  margin-left: 1rem;
+}
+
+main button i {
+  margin: 3px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  margin-inline: 0.3rem;
+}
+
+h2 {
+  color: white;
+}
+
+h4 {
+  margin-top: 3rem;
+}
+
+i {
+  color: white;
+}
+
+main button {
+  color: white;
+  padding: 0.5rem;
+}
+
+nav .link a {
+  @media (max-width: 850px) {
+    flex-direction: row;
+  }
+  @media (max-width: 485px) {
+    display: none;
+  }
+}
+
+.hamburger {
+  @media (min-width: 485px) {
+    display: none;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+  section {
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    height: 100%;
+    &:hover {
+      gap: 2rem;
+    }
+    .item {
+      position: relative;
+      transition: 250ms;
+      &:hover {
+        transform: scale(1.2);
+        z-index: 1;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+.left_arrow,
+.right_arrow {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  font-size: 6em;
+  color: white;
+  z-index: 2;
+}
+.left_arrow {
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+.right_arrow {
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+footer .social {
+  display: inline-block;
+}
+
+footer i {
+  font-size: 1.5em;
+  margin: 0.5rem;
+}
+
+footer button {
+  border: 1px solid gray;
+  border-radius: 0;
+  color: gray;
+  background-color: rgba(33, 37, 41 /1);
+}
+
+footer p {
+  color: gray;
+}
+
+//profile
+.avatarProfile {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+// setting.html
+.account-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  color: #737373;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border-top: 1px solid #e6e6e6;
+  margin: 15px 0;
+}
+
+.action-link {
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.membership-btn {
+  background-color: #e6e6e6;
+  border: none;
+  color: #333;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.account-info {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.secondary-text {
+  color: #737373;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.plan-badge {
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.paypal-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
