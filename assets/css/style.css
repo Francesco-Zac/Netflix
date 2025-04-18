@@ -185,9 +185,24 @@ footer p {
   color: gray;
 }
 
+.avatar-wrap {
+  position: relative;
+}
+
 .avatarProfile {
   max-width: 100px;
   max-height: 100px;
+  display: block;
+}
+
+.penna {
+  position: absolute;
+  width: 25px;
+  border-radius: 50%;
+  top: 4.5rem;
+  right: 3px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .account-container {
