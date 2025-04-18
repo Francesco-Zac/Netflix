@@ -83,6 +83,17 @@ main button {
   }
 }
 
+@media (max-width: 850px) {
+  .iconeT {
+    text-align: center;
+  }
+}
+@media (max-width: 485px) {
+  .iconeT {
+    text-align: start;
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 100%);

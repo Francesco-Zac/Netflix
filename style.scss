@@ -72,6 +72,15 @@ nav .link a {
   }
 }
 
+.iconeT {
+  @media (max-width: 850px) {
+    text-align: center;
+  }
+  @media (max-width: 485px) {
+    text-align: start;
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 100%);
